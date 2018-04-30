@@ -1,3 +1,3 @@
 # TestGit
 for testing git
-for pulling
+for pushing
