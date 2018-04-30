@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block head_title %}try django1.9{% endblock head_title %}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'posts/style.css' %}"/>
+    <style>
+        {% block style %}{% endblock style %}
+    </style>
+</head>
+<body>
+{% include "messages_display.html" %}
+<div class='container'>
+{% block content %}{% endblock content %}
+</div>
+</body>
+</html>
